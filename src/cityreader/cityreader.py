@@ -34,8 +34,8 @@ def cityreader(cities=[]):
       if count == 1:
         continue 
       city_name = row[0]
-      lat = row[3]
-      lon = row[4]
+      lat = float(row[3])
+      lon = float(row[4])
       cities.append(City(city_name, lat, lon))
       # Implement the functionality to read from the 'cities.csv' file
       # For each city record, create a new City instance and add it to the 
